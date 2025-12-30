@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --casa-magenta: #c5195f;
+  --casa-onyx: #353839;
+  --casa-bg: #ffffff;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background: var(--casa-bg);
+  color: var(--casa-onyx);
+}
+
+/* Ensure Casa Copenhagen brand text is always magenta */
+h1.text-casa-magenta,
+.text-casa-magenta {
+  color: #C5195F !important;
+}
+
+button {
+  opacity: 1;
+  background: var(--casa-magenta);
+  color: #ffffff;
+}
+
+button.bg-transparent {
+  background: transparent !important;
+}
+
+button.bg-transparent.text-onyx {
+  color: var(--casa-onyx) !important;
+}
+
+.btn-primary {
+  background-color: var(--casa-magenta);
+  color: #ffffff;
+  opacity: 1;
+}
+
+.btn-primary:disabled {
+  background-color: #d1d5db;
+  color: #ffffff;
+  opacity: 1;
+}
